@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "marumasigngui",
+	"version": "${version}",
+	"name": "MarumaSignGUI",
+	"description": "Add GUI for MarumaSign",
+	"authors": [
+		"PizzaHarumaki"
+	],
+	"contact": {
+		"sources": "https://github.com/fhrk-78/MarumaSignGUI"
+	},
+	"license": "MIT",
+	"icon": "assets/marumasigngui/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"io.github.fhrk_78.msigngui.client.MarumaSignGUIClient"
+		],
+		"main": [
+			"io.github.fhrk_78.msigngui.MarumaSignGUI"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

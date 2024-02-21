@@ -1,0 +1,18 @@
+{
+  "gui.marumasigngui.lineCopy": "行ごとにコピー (マルチプレイ向け)",
+  "gui.marumasigngui.commandCopy": "コマンドをコピー (シングルプレイ向け)",
+  "key.marumasigngui.newcreatekey": "新しく作成",
+  "key.marumasigngui.copylinekey": "行ごとにコピー",
+  "key.category.marumasigngui.msgct": "MarumaSignGUI",
+  "text.marumasigngui.clcgd": "この画面は指定されたキー(デフォルト：B)で再度\n開くことができます(注意：バックテキストは使用できません)",
+  "text.marumasigngui.inurl": "画像URL :",
+  "text.marumasigngui.inpx": "X軸位置",
+  "text.marumasigngui.inpy": "Y軸位置",
+  "text.marumasigngui.inpz": "Z軸位置",
+  "text.marumasigngui.inrx": "X軸回転",
+  "text.marumasigngui.inry": "Y軸回転",
+  "text.marumasigngui.inrz": "Z軸回転",
+  "text.marumasigngui.inwd": "横幅",
+  "text.marumasigngui.inhg": "縦",
+  "text.marumasigngui.ctrla": "Ctrl + A で全選択、Ctrl + C でコピー"
+}
