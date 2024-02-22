@@ -21,6 +21,9 @@
 			"io.github.fhrk_78.msigngui.MarumaSignGUI"
 		]
 	},
+	"mixins": [
+		"marumasigngui.mixins.json"
+	],
 	"depends": {
 		"fabricloader": ">=0.15.7",
 		"minecraft": "~1.20.4",
