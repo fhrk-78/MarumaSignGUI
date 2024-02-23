@@ -8,7 +8,8 @@
 		"PizzaHarumaki"
 	],
 	"contact": {
-		"sources": "https://github.com/fhrk-78/MarumaSignGUI"
+		"sources": "https://github.com/fhrk-78/MarumaSignGUI",
+		"issues": "https://github.com/fhrk-78/MarumaSignGUI/issues"
 	},
 	"license": "MIT",
 	"icon": "assets/marumasigngui/icon.png",
