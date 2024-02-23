@@ -4,7 +4,7 @@
   "key.marumasigngui.newcreatekey": "CreateNew",
   "key.marumasigngui.copylinekey": "CopySavedLine",
   "key.category.marumasigngui.msgct": "MarumaSignGUI",
-  "text.marumasigngui.clcgd": "This screen can be opened with the configured key\n(Default: B)(WARN: Can't use BackText)",
+  "text.marumasigngui.clcgd": "This screen can be opened with the \nconfigured key (Default: B)",
   "text.marumasigngui.inurl": "Image URL :",
   "text.marumasigngui.inpx": "X pos",
   "text.marumasigngui.inpy": "Y pos",
@@ -14,5 +14,7 @@
   "text.marumasigngui.inrz": "Z dig",
   "text.marumasigngui.inwd": "Width",
   "text.marumasigngui.inhg": "Height",
-  "text.marumasigngui.ctrla": "Select all: Ctrl + A, Copy: Ctrl + C"
+  "text.marumasigngui.ctrla": "You can \"Select all: Ctrl + A\", \"Copy: Ctrl + C\" too.",
+  "text.marumasigngui.dsurl": "ShortURL",
+  "text.marumasigngui.copy": "Copy"
 }

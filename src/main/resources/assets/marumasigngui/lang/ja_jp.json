@@ -4,7 +4,7 @@
   "key.marumasigngui.newcreatekey": "新しく作成",
   "key.marumasigngui.copylinekey": "行ごとにコピー",
   "key.category.marumasigngui.msgct": "MarumaSignGUI",
-  "text.marumasigngui.clcgd": "この画面は指定されたキー(デフォルト：B)で再度\n開くことができます(注意：バックテキストは使用できません)",
+  "text.marumasigngui.clcgd": "この画面は指定されたキー(デフォルト：B)で\n再度開くことができます",
   "text.marumasigngui.inurl": "画像URL :",
   "text.marumasigngui.inpx": "X軸位置",
   "text.marumasigngui.inpy": "Y軸位置",
@@ -14,5 +14,7 @@
   "text.marumasigngui.inrz": "Z軸回転",
   "text.marumasigngui.inwd": "横幅",
   "text.marumasigngui.inhg": "縦",
-  "text.marumasigngui.ctrla": "Ctrl + A で全選択、Ctrl + C でコピー"
+  "text.marumasigngui.ctrla": "Ctrl + A で全選択、Ctrl + C でコピーも可能です",
+  "text.marumasigngui.dsurl": "短縮URL",
+  "text.marumasigngui.copy": "コピー"
 }
