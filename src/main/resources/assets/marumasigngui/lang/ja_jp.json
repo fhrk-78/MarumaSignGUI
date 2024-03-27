@@ -1,6 +1,6 @@
 {
-  "gui.marumasigngui.lineCopy": "行ごとにコピー (マルチプレイ向け)",
-  "gui.marumasigngui.commandCopy": "コマンドをコピー (シングルプレイ向け)",
+  "gui.marumasigngui.lineCopy": "行ごとにコピー",
+  "gui.marumasigngui.commandCopy": "コマンドをコピー/実行",
   "key.marumasigngui.newcreatekey": "新しく作成",
   "key.marumasigngui.copylinekey": "行ごとにコピー",
   "key.category.marumasigngui.msgct": "MarumaSignGUI",
@@ -15,6 +15,7 @@
   "text.marumasigngui.inwd": "横幅",
   "text.marumasigngui.inhg": "縦",
   "text.marumasigngui.ctrla": "Ctrl + A で全選択、Ctrl + C でコピーも可能です",
-  "text.marumasigngui.dsurl": "短縮URL",
-  "text.marumasigngui.copy": "コピー"
+  "text.marumasigngui.dsurl": "看板を入手する",
+  "text.marumasigngui.copy": "コピー",
+  "text.marumasigngui.otho": "高度な設定"
 }

@@ -30,10 +30,10 @@
 		"fabricloader": ">=0.15.7",
 		"minecraft": "~1.20.4",
 		"java": ">=17",
-		"fabric-api": "*",
-		"libgui": ">=9.2.2"
+		"fabric-api": "*"
 	},
 	"recommends": {
-		"marumasa_sign": "^1.8"
+		"marumasa_sign": "^1.8",
+		"libgui": ">=9.2.2"
 	}
 }
