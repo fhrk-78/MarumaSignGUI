@@ -28,10 +28,11 @@ public class GenGUI extends LightweightGuiDescription {
         root.add(lURL, 0, 0, 2, 1);
         // フィールド：URL
         WTextField inURL = new WTextField();
-        inURL.setMaxLength(255);
+        inURL.setMaxLength(16384);
         root.add(inURL, 3, 0, 11, 1);
-        // URL短縮するか
+        // 自動コピー
         WToggleButton dsURL = new WToggleButton(Text.translatable("text.marumasigngui.dsurl"));
+        dsURL.setToggle(true);
         root.add(dsURL, 15, 0, 3, 1);
 
         // ラベル：xpos
@@ -92,6 +93,9 @@ public class GenGUI extends LightweightGuiDescription {
         WTextField inHG = new WTextField();
         inHG.setText("1");
         root.add(inHG, 7, 6, 2, 1);
+        // ラベル：高度な機能
+        WLabel otOptL = new WLabel(Text.translatable("text.marumasigngui.otho"));
+        root.add(otOptL, 0, 8, 2, 1);
 
         // ボタン：copy line-by-line for multiplay
         WButton lineCopy = new WButton(Text.translatable("gui.marumasigngui.lineCopy"));
@@ -121,7 +125,7 @@ public class GenGUI extends LightweightGuiDescription {
         // ボタン：copy command for singleplay
         WButton commandCopy = new WButton(Text.translatable("gui.marumasigngui.commandCopy"));
         commandCopy.setOnClick(() -> {
-            if(dsURL.getToggle()) {
+            if(inURL.getText().length() > 30) {
                 List<String> tmp_a = MarumaSignGUIClient.utlGenLines(MarumaSignGUIClient.getShortURL(inURL.getText()) + "|" + inPX.getText() + "|"
                         + inPY.getText() + "|" + inPZ.getText() + "|" + inHG.getText() + "|" + inWD.getText() + "|"
                         + inRX.getText() + "|" + inRY.getText() + "|" + inRZ.getText());
@@ -129,7 +133,13 @@ public class GenGUI extends LightweightGuiDescription {
                     tmp_a.add("");
                 }
                 String tmp_s = getCommand(tmp_a);
-                MinecraftClient.getInstance().setScreen(new CottonClientScreen(new GivecopyGUI(tmp_s)));
+                if (dsURL.getToggle()) {
+                    MarumaSignGUIClient.sendCMD(tmp_s);
+                    inURL.setText("看板を入手しました！");
+                } else {
+                    MarumaSignGUIClient.copyString(tmp_s);
+                    inURL.setText("コマンドのコピーが完了しました！");
+                }
             } else {
                 List<String> tmp_a = MarumaSignGUIClient.utlGenLines(inURL.getText() + "|" + inPX.getText() + "|"
                         + inPY.getText() + "|" + inPZ.getText() + "|" + inHG.getText() + "|" + inWD.getText() + "|"
@@ -138,7 +148,13 @@ public class GenGUI extends LightweightGuiDescription {
                     tmp_a.add("");
                 }
                 String tmp_s = getCommand(tmp_a);
-                MinecraftClient.getInstance().setScreen(new CottonClientScreen(new GivecopyGUI(tmp_s)));
+                if (dsURL.getToggle()) {
+                    MarumaSignGUIClient.sendCMD(tmp_s);
+                    inURL.setText("看板を入手しました！");
+                } else {
+                    MarumaSignGUIClient.copyString(tmp_s);
+                    inURL.setText("コマンドのコピーが完了しました！");
+                }
             }
         });
         root.add(commandCopy, 10, 11, 10, 1);

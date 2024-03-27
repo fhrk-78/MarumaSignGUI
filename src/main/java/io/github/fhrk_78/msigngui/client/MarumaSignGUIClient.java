@@ -8,6 +8,7 @@ import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.minecraft.client.Keyboard;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.util.InputUtil;
 import org.apache.commons.lang3.StringUtils;
@@ -113,5 +114,16 @@ public class MarumaSignGUIClient implements ClientModInitializer {
     public static void copyString(String tmp_s) {
         Keyboard keyboard = new Keyboard(MinecraftClient.getInstance());
         keyboard.setClipboard(tmp_s);
+    }
+
+    public static void sendCMD(String cmd) {
+        final MinecraftClient client = MinecraftClient.getInstance();
+        final ClientPlayerEntity clientPlayer = client.player;
+        if (cmd.startsWith("/")) {
+            cmd = cmd.substring(1);
+            clientPlayer.networkHandler.sendChatCommand(cmd);
+        } else {
+            clientPlayer.networkHandler.sendChatMessage(cmd);
+        }
     }
 }

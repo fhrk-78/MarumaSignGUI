@@ -1,6 +1,6 @@
 {
-  "gui.marumasigngui.lineCopy": "Copy line by line (For MultiPlay)",
-  "gui.marumasigngui.commandCopy": "Copy Command (For SinglePlay)",
+  "gui.marumasigngui.lineCopy": "Copy line by line",
+  "gui.marumasigngui.commandCopy": "Copy / Execute Command",
   "key.marumasigngui.newcreatekey": "CreateNew",
   "key.marumasigngui.copylinekey": "CopySavedLine",
   "key.category.marumasigngui.msgct": "MarumaSignGUI",
@@ -15,6 +15,7 @@
   "text.marumasigngui.inwd": "Width",
   "text.marumasigngui.inhg": "Height",
   "text.marumasigngui.ctrla": "You can \"Select all: Ctrl + A\", \"Copy: Ctrl + C\" too.",
-  "text.marumasigngui.dsurl": "ShortURL",
-  "text.marumasigngui.copy": "Copy"
+  "text.marumasigngui.dsurl": "GetDirect",
+  "text.marumasigngui.copy": "Copy",
+  "text.marumasigngui.otho": "Other Options"
 }
